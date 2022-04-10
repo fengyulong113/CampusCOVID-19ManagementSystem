@@ -31,9 +31,9 @@ $ npm start
 执行下列建表语句
 
 1. 切到VUESTORE下
-```sql
+>```sql
 > use vuestore;
-```
+>```
 
 2. 创建user(用户)表
 >```sql
@@ -135,18 +135,19 @@ $ npm start
 >此处不设置的话,可能在进行删除或者更新操作时会报错
 
 9. 插入测试数据
-```sql
+>```sql
 > insert into `user`
 > (id, username, password, sex, classes, type)
 > values
 > (111111, 'studentTest','123','男','计科18401',2);
-```
-```sql
+>```
+
+>```sql
 > insert into `user`
 > (id, username, password, sex, type)
 > values
 > (111111, 'teacherTest','123','男', 3);
-```
+>```
 
 还需要准备redis
 按照[redis教程](https://www.runoob.com/redis/redis-install.html)操作即可
